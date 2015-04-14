@@ -21,12 +21,6 @@
             <artifactId>sqljdbc4</artifactId>
             <version>4.1</version>
         </dependency>
-        <!--Logger-->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.6.1</version>
-        </dependency>
         <!--Yandex Properties-->
         <dependency>
             <groupId>ru.yandex.qatools.properties</groupId>
