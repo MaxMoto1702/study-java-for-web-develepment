@@ -3,7 +3,7 @@ package com.rstyle.maxmoto1702.book.dao;
 import com.rstyle.maxmoto1702.book.model.Author;
 import com.rstyle.maxmoto1702.book.model.Book;
 import com.rstyle.maxmoto1702.book.model.Category;
-import com.rstyle.maxmoto1702.book.properties.DbProperties1;
+import com.rstyle.maxmoto1702.book.properties.DBProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -17,7 +17,7 @@ import java.util.List;
 public class BookDAOImpl implements BookDAO {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BookDAOImpl.class);
-    private static final DbProperties1 DB_PROPERTIES = new DbProperties1();
+    private static final DBProperties DB_PROPERTIES = new DBProperties();
 
     static {
         try {

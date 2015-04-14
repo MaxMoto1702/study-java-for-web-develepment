@@ -10,9 +10,9 @@ import ru.yandex.qatools.properties.annotations.Resource;
  * Created by maksim.serebryanskiy on 14.04.2015.
  */
 @Resource.Classpath({"db.properties", "db.bak.properties"})
-public class DbProperties1 {
+public class DBProperties {
 
-    private static final Logger LOG = LoggerFactory.getLogger(DbProperties1.class);
+    private static final Logger LOG = LoggerFactory.getLogger(DBProperties.class);
     @Property("driver")
     private String driver;
     @Property("url")
@@ -22,7 +22,7 @@ public class DbProperties1 {
     @Property("password")
     private String password;
 
-    public DbProperties1() {
+    public DBProperties() {
         LOG.debug("Initialization properties");
         PropertyLoader.populate(this);
     }
