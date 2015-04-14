@@ -27,5 +27,11 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>1.6.1</version>
         </dependency>
+        <!--Yandex Properties-->
+        <dependency>
+            <groupId>ru.yandex.qatools.properties</groupId>
+            <artifactId>properties-loader</artifactId>
+            <version>1.6</version>
+        </dependency>
     </dependencies>
 </project>

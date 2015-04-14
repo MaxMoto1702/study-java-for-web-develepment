@@ -3,6 +3,7 @@ package com.rstyle.maxmoto1702.book.dao;
 import com.rstyle.maxmoto1702.book.model.Author;
 import com.rstyle.maxmoto1702.book.model.Book;
 import com.rstyle.maxmoto1702.book.model.Category;
+import com.rstyle.maxmoto1702.book.properties.DbProperties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,17 +17,21 @@ import java.util.List;
 public class BookDAOImpl implements BookDAO {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(BookDAOImpl.class);
+    private static final DbProperties DB_PROPERTIES = new DbProperties();
 
     static {
         try {
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            Class.forName(DB_PROPERTIES.getDriver());
         } catch (ClassNotFoundException e) {
-            LOGGER.error("Class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' not found", e);
+            LOGGER.error("Class '" + DB_PROPERTIES.getDriver() + "' not found", e);
         }
     }
 
     private Connection getConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:sqlserver://bkr6k08lem.database.windows.net:1433;database=maxim-serebryanskiy_db;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;", "maxim.serebryanskiy@bkr6k08lem", "17021989MaxMoto");
+        return DriverManager.getConnection(
+                DB_PROPERTIES.getUrl(),
+                DB_PROPERTIES.getUsername(),
+                DB_PROPERTIES.getPassword());
     }
 
     private void closeConnection(Connection connection) {
