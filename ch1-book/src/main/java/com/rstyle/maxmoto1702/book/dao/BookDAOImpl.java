@@ -19,14 +19,14 @@ public class BookDAOImpl implements BookDAO {
 
     static {
         try {
-            Class.forName("com.microsoft.sqlservers.jdbc.SQLServerDriver");
+            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         } catch (ClassNotFoundException e) {
-            LOGGER.error("Class 'com.microsoft.sqlservers.jdbc.SQLServerDriver' not found", e);
+            LOGGER.error("Class 'com.microsoft.sqlserver.jdbc.SQLServerDriver' not found", e);
         }
     }
 
     private Connection getConnection() throws SQLException {
-        return DriverManager.getConnection("jdbc:sqlserver://bkr6k08lem.database.windows.net:1433;database=maxim-serebryanskiy_db;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;", "maxim.serebryanskiy@bkr6k08lem", "");
+        return DriverManager.getConnection("jdbc:sqlserver://bkr6k08lem.database.windows.net:1433;database=maxim-serebryanskiy_db;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;", "maxim.serebryanskiy@bkr6k08lem", "17021989MaxMoto");
     }
 
     private void closeConnection(Connection connection) {
