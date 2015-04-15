@@ -21,6 +21,7 @@
     <modules>
         <module>ch1-book</module>
         <module>ch2-bookweb</module>
+        <module>ch3-practic</module>
     </modules>
 
     <build>
