@@ -20,18 +20,13 @@
     </properties>
 
     <dependencies>
-        <!--Java Servlet API-->
-        <dependency>
-            <groupId>javax</groupId>
-            <artifactId>javaee-api</artifactId>
-            <version>7.0</version>
-        </dependency>
         <!--Chapter 1: Introducing Java Web Development-->
         <dependency>
             <groupId>com.rstyle.maxmoto1702</groupId>
             <artifactId>ch1-book</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--JSTL-->
         <dependency>
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
@@ -43,29 +38,4 @@
             <version>1.1.2</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <!--Jetty-->
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.1.3.v20140225</version>
-                <configuration>
-                    <scanIntervalSeconds>0</scanIntervalSeconds>
-                    <webApp>
-                        <contextPath>/</contextPath>
-                    </webApp>
-                    <stopPort>9847</stopPort>
-                    <stopKey>tms-local</stopKey>
-                    <jvmArgs>
-                        -Xmx1024m
-                        -XX:MaxPermSize=512m
-                    </jvmArgs>
-                    <goal>run-forked</goal>
-                </configuration>
-            </plugin>
-
-        </plugins>
-    </build>
 </project>
