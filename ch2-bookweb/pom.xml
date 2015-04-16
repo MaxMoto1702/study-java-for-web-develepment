@@ -14,11 +14,6 @@
 
     <name>Chapter 2: Building Web Applications Using Servlets and JSP</name>
 
-    <properties>
-        <jetty.host>localhost</jetty.host>
-        <jetty.port>9998</jetty.port>
-    </properties>
-
     <dependencies>
         <!--Chapter 1: Introducing Java Web Development-->
         <dependency>

@@ -14,11 +14,6 @@
 
     <name>Chapter 3. Best Practices in Java EE Web Development</name>
 
-    <properties>
-        <jetty.host>localhost</jetty.host>
-        <jetty.port>9998</jetty.port>
-    </properties>
-
     <dependencies>
         <!--Chapter 1: Introducing Java Web Development-->
         <dependency>
@@ -30,12 +25,12 @@
         <dependency>
             <groupId>jstl</groupId>
             <artifactId>jstl</artifactId>
-            <version>1.2</version>
+            <version>${jstl.version}</version>
         </dependency>
         <dependency>
             <groupId>taglibs</groupId>
             <artifactId>standard</artifactId>
-            <version>1.1.2</version>
+            <version>${taglib.vesion}</version>
         </dependency>
     </dependencies>
 </project>
