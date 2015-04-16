@@ -4,14 +4,14 @@
         "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
     <constant name="struts.devMode" value="true"/>
-    <package name="basicstruts2" extends="struts-default" namespace="/">
-        <action name="index">
-            <result>/index.jsp</result>
-        </action>
+    <constant name="struts.custom.i18n.resources" value="ApplicationResources"/>
 
-        <action name="hello" class="com.rstyle.maxmoto1702.struts.action.HelloWorldAction" method="execute">
-            <result name="success">/hello.jsp</result>
+    <package name="default" extends="struts-default" namespace="/">
+        <action name="login" class="com.rstyle.maxmoto1702.bookstore.action.LoginAction">
+            <result name="success">view/home.jsp</result>
+            <result name="error">/login.jsp</result>
         </action>
     </package>
 </struts>
