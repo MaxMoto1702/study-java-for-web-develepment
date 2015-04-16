@@ -6,6 +6,20 @@
          id="WebApp_ID" version="3.0">
     <display-name>Book Web</display-name>
 
+    <filter>
+        <filter-name>SimpleFilter</filter-name>
+        <filter-class>com.rstyle.maxmoto1702.practic.filter.SimpleFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>SimpleFilter</filter-name>
+        <servlet-name>Hello</servlet-name>
+    </filter-mapping>
+
+    <listener>
+        <listener-class>com.rstyle.maxmoto1702.practic.listener.SimpleListener</listener-class>
+    </listener>
+
     <servlet>
         <servlet-name>Hello</servlet-name>
         <servlet-class>com.rstyle.maxmoto1702.practic.Hello</servlet-class>
@@ -19,7 +33,7 @@
         <servlet-name>Hello</servlet-name>
         <url-pattern>/hello</url-pattern>
     </servlet-mapping>
-    
+
     <servlet-mapping>
         <servlet-name>BookServlet</servlet-name>
         <url-pattern>/book</url-pattern>
@@ -33,4 +47,4 @@
         <welcome-file>default.htm</welcome-file>
         <welcome-file>default.jsp</welcome-file>
     </welcome-file-list>
-</web-app> 
+</web-app>

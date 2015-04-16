@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -16,6 +17,7 @@ import java.io.IOException;
 /**
  * Created by maksim.serebryanskiy on 15.04.2015.
  */
+@WebServlet(name = "Hello2",urlPatterns = "/hello2")
 public class Hello extends HttpServlet {
 
     private static final Logger LOG = LoggerFactory.getLogger(Hello.class);
