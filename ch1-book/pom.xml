@@ -19,13 +19,13 @@
         <dependency>
             <groupId>com.microsoft.sqlserver</groupId>
             <artifactId>sqljdbc4</artifactId>
-            <version>4.1</version>
+            <version>${mssql.jdbc.version}</version>
         </dependency>
         <!--Yandex Properties-->
         <dependency>
             <groupId>ru.yandex.qatools.properties</groupId>
             <artifactId>properties-loader</artifactId>
-            <version>1.6</version>
+            <version>${yandex.property.version}</version>
         </dependency>
     </dependencies>
 </project>

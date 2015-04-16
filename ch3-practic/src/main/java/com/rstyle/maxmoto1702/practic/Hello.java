@@ -1,7 +1,5 @@
 package com.rstyle.maxmoto1702.practic;
 
-import com.rstyle.maxmoto1702.practic.model.Author;
-import com.rstyle.maxmoto1702.practic.model.Book;
 import com.rstyle.maxmoto1702.practic.model.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

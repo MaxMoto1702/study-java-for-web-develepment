@@ -1,4 +1,4 @@
-package com.rstyle.maxmoto1702.practic.listener; 
+package com.rstyle.maxmoto1702.practic.listener;
 
 import com.rstyle.maxmoto1702.practic.filter.SimpleFilter;
 import org.slf4j.Logger;
@@ -6,11 +6,10 @@ import org.slf4j.LoggerFactory;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpSessionAttributeListener;
+import javax.servlet.http.HttpSessionBindingEvent;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
-import javax.servlet.http.HttpSessionBindingEvent;
 
 /**
  * Created by maksim.serebryanskiy on 16.04.2015.

@@ -1,21 +1,14 @@
 package com.rstyle.maxmoto1702.practic;
 
-import com.rstyle.maxmoto1702.book.dao.BookDAO;
-import com.rstyle.maxmoto1702.book.dao.BookDAOImpl;
-import com.rstyle.maxmoto1702.book.model.Book;
-import com.rstyle.maxmoto1702.book.model.Category;
 import com.rstyle.maxmoto1702.practic.model.Author;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
