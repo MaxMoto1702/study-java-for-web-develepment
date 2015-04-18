@@ -12,6 +12,10 @@ public class BookService {
 
     private BookDAO bookDao;
 
+    public BookDAO getBookDao() {
+        return bookDao;
+    }
+
     public void setBookDao(BookDAO bookDao) {
         this.bookDao = bookDao;
     }

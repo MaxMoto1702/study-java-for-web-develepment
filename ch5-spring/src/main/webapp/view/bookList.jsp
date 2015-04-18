@@ -16,7 +16,7 @@
     <tbody>
     <c:forEach items="${bookList}" var="book">
         <tr>
-            <td>${book.authors[0].firstName + book.authors[0].lastName}</td>
+            <td>${book}</td>
             <td>${book.bookTitle}</td>
         </tr>
     </c:forEach>

@@ -7,9 +7,18 @@
                             http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean name="/list-book.html"
-          class="com.rstyle.maxmoto1702.spring.bookstore.conntroller.BookController"/>
+          class="com.rstyle.maxmoto1702.spring.bookstore.conntroller.BookController"
+          p:bookService-ref="bookService"/>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/view/"
           p:suffix=".jsp"/>
+
+    <bean name="dao"
+          class="com.rstyle.maxmoto1702.book.dao.BookDAOImpl"/>
+
+    <bean name="bookService"
+          class="com.rstyle.maxmoto1702.book.service.BookService"
+          p:bookDao-ref="dao"/>
+
 </beans>
