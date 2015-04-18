@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                             http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.rstyle.maxmoto1702</groupId>
@@ -26,6 +24,8 @@
         <jstl.version>1.2</jstl.version>
         <taglib.vesion>1.1.2</taglib.vesion>
         <struts.version>2.3.20</struts.version>
+        
+        <springframework.version>4.1.0.RELEASE</springframework.version>
 
         <mssql.jdbc.version>4.1</mssql.jdbc.version>
         <yandex.property.version>1.6</yandex.property.version>
@@ -36,6 +36,7 @@
         <module>ch2-bookweb</module>
         <module>ch3-practic</module>
         <module>ch4-struts</module>
+        <module>ch5-spring</module>
     </modules>
 
     <build>
@@ -69,7 +70,6 @@
                         <goal>run-forked</goal>
                     </configuration>
                 </plugin>
-
             </plugins>
         </pluginManagement>
     </build>
@@ -80,6 +80,17 @@
             <groupId>javax</groupId>
             <artifactId>javaee-api</artifactId>
             <version>${javaee.version}</version>
+        </dependency>
+        <!--JSTL-->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>${taglib.vesion}</version>
         </dependency>
         <!--JUnit-->
         <dependency>

@@ -21,16 +21,5 @@
             <artifactId>ch1-book</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-        <!--JSTL-->
-        <dependency>
-            <groupId>jstl</groupId>
-            <artifactId>jstl</artifactId>
-            <version>${jstl.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>taglibs</groupId>
-            <artifactId>standard</artifactId>
-            <version>${taglib.vesion}</version>
-        </dependency>
     </dependencies>
 </project>
