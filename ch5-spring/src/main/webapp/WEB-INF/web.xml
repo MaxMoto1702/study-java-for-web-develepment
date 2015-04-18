@@ -6,21 +6,21 @@
     <display-name>Book Store</display-name>
     
     <servlet>
-        <servlet-name>bookstore</servlet-name>
+        <servlet-name>hello</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>/spring/appservlet/bookstore-servlet.xml</param-value>
+            <param-value>/spring/appservlet/hello-servlet.xml</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     
     <servlet-mapping>
-        <servlet-name>bookstore</servlet-name>
+        <servlet-name>hello</servlet-name>
         <url-pattern>*.html</url-pattern>
     </servlet-mapping>
 
     <welcome-file-list>
-        <welcome-file>/list-book.html</welcome-file>
+        <welcome-file>/hello.html</welcome-file>
     </welcome-file-list>
 </web-app>
