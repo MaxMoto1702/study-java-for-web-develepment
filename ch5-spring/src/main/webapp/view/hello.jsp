@@ -11,8 +11,10 @@
 <body>
 <h1>Hello</h1>
 
-<h2>Change 4</h2>
+<h2>Change 5</h2>
 ${header["user-agent"]}<br/>
+<p>JSESSIONID: ${cookie.JSESSIONID.value}</p>
+
 <jsp:useBean id="bookDAO" class="com.rstyle.maxmoto1702.book.dao.BookDAOImpl"/>
 <%
     List<Book> books = bookDAO.findAllBooks();

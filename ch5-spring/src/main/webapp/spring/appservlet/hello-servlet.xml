@@ -11,5 +11,6 @@
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/view/"
+          p:
           p:suffix=".jsp"/>
 </beans>
